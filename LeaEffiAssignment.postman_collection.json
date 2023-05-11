@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "8be1c4f9-0cce-4ab8-aa08-115cfdadf3fa",
+		"name": "LeaEffiAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4644282",
+		"_collection_link": "https://grey-space-13835.postman.co/workspace/remitrix-new~bc649a78-f3a5-4961-bd8e-ebaaaec0c0d1/collection/4644282-8be1c4f9-0cce-4ab8-aa08-115cfdadf3fa?action=share&creator=4644282&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Save Patient info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\r\n\t\"FirstName\": \"FN1\",\r\n\t\"LastName\": \"LN1\",\r\n\t\"IdentityCard\": \"IJSHJK\",\r\n\t\"City\": \"TEL sdhfk\",\r\n\t\"Street\": \"dsfkjh\",\r\n\t\"Number\": \"dsfsdf\",\r\n\t\"DteOfBirth\": \"2023-05-30\",\r\n\t\"Telephone\": \"4567891230\",\r\n\t\"AlternateTelephone\": \"789123460\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57246/api/patient/Register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57246",
+					"path": [
+						"api",
+						"patient",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get patient data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57246/api/patient/get?patientId=gdfgdg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57246",
+					"path": [
+						"api",
+						"patient",
+						"get"
+					],
+					"query": [
+						{
+							"key": "patientId",
+							"value": "gdfgdg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save vaccination info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"PatientID\": \"138f3168-ef66-45a1-8ba3-83d4e892d8c4\",\r\n\t\"VaccinatedDate\": \"2023-01-18\",\r\n\t\"VaccinationManufacturer\": \"Covax\"\t\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57246/api/patient/VaccinationInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57246",
+					"path": [
+						"api",
+						"patient",
+						"VaccinationInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vaccination info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57246/api/patient/VaccinationInfo?patientId=138f3168-ef66-45a1-8ba3-83d4e892d8c4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57246",
+					"path": [
+						"api",
+						"patient",
+						"VaccinationInfo"
+					],
+					"query": [
+						{
+							"key": "patientId",
+							"value": "138f3168-ef66-45a1-8ba3-83d4e892d8c4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Infected info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PatientID\": \"138f3168-ef66-45a1-8ba3-83d4e892d8c4\",\r\n\"InfectedDate\":\"2023-04-05\",\r\n\"RecoveredDate\":\"2023-04-15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57246/api/patient/InfectedInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57246",
+					"path": [
+						"api",
+						"patient",
+						"InfectedInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Infected info",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"PatientID\": \"138f3168-ef66-45a1-8ba3-83d4e892d8c4\",\r\n\"InfectedDate\":\"2023-04-05\",\r\n\"RecoveredDate\":\"2023-04-15\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57246/api/patient/InfectedInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57246",
+					"path": [
+						"api",
+						"patient",
+						"InfectedInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get infected info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57246/api/patient/InfectedInfo?patientId=138f3168-ef66-45a1-8ba3-83d4e892d8c4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57246",
+					"path": [
+						"api",
+						"patient",
+						"InfectedInfo"
+					],
+					"query": [
+						{
+							"key": "patientId",
+							"value": "138f3168-ef66-45a1-8ba3-83d4e892d8c4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
