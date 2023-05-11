@@ -17,7 +17,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Xml;
 using System.Threading;
 
-namespace Remitrix
+namespace CoronaManagementSystemHMO
 {
     public class Startup
     {

@@ -10,7 +10,7 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <ShowAllFiles>false</ShowAllFiles>
-    <NameOfLastUsedPublishProfile>D:\Remitrix\BackEnd_CSharp\Remitrix\Properties\PublishProfiles\Local.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>Local</NameOfLastUsedPublishProfile>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
